@@ -1,0 +1,18 @@
+/*
+Theme Name: Domaine des Mathevies
+Theme URI: http://www.mathevies.com
+Description: Mathevies responsive
+Version: 1.0
+Author: Errol Sidelsky
+Author URI: http://www.squie.com
+*/
+
+@import "css/main.css";
+
+div.topWoodStrip div.contactInfoContainer div.language a {
+margin-left: 0px;
+}
+
+#flags_language_selector span {
+margin-right: 10px;
+}
