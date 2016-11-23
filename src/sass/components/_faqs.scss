@@ -1,0 +1,43 @@
+.faqs {
+    font-family: $font-primary;
+
+    &__title {
+        font-family: $font-primary-medium;
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    &__sub-title {
+        font-family: $font-primary-medium;
+        font-size: 2rem;
+        line-height: 1;
+        margin: 0 0 1rem 0;
+    }
+
+    &__list {
+
+    }
+
+    &__list-item {
+
+        ul {
+            border-bottom: solid 1px lighten($color_2, 20%);
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+
+            li {
+
+                p {
+                    margin: 0!important;
+                    padding: 0!important;
+                    font-size: 1.5rem!important;
+                    line-height: 1.5!important;
+                }
+
+            }
+        }
+
+    }
+
+
+}

@@ -1,4 +1,8 @@
 <?php
+
+// update_option('siteurl','http://www.mathevies.com/staging/');
+// update_option('home','http://www.mathevies.com/staging/');
+
   //Wordpress reset (removes redundant scripts)
   require('functions/reset.php');
 
@@ -22,9 +26,6 @@
 
   //Move GF script to footer
   require('functions/gf-js-to-footer.php');
-
-  //Redirect home
-  require('functions/redirect.php');
 
 
   //Custom Post Types

@@ -18,9 +18,10 @@ $arial: 'Arial', sans-serif;
 \*------------------------------------*/
 $font-primary: 'gotham-book', Helvetica, Arial, sans-serif;
 $font-primary-medium: 'gotham-medium', Helvetica, Arial, sans-serif;
+$font-primary-thin: 'gotham-thin', Helvetica, Arial, sans-serif;
 $font-primary-light: 'gotham-light', Helvetica, Arial, sans-serif;
-$font-primary-demi: 'gotham-book', Helvetica, Arial, sans-serif;
-$font-primary-heavy: 'gotham-bold', Helvetica, Arial, sans-serif;
+$font-primary-bold: 'gotham-bold', Helvetica, Arial, sans-serif;
+$font-primary-black: 'gotham-black', Helvetica, Arial, sans-serif;
 
 
 //Global
@@ -50,3 +51,73 @@ $bar-thickness: 2px;                    // The thickness of the button bars
 $button-pad: 0;                         // The left/right padding between button area and bars.
 $button-bar-space: 4px;                // The spacing between button bars
 $button-transistion-duration: .3s;     // The transition duration
+
+
+/*------------------------------------*\
+    Styles from build
+\*------------------------------------*/
+
+
+$color_1: #ffffff;
+$color_2: #a4a29d;
+$color_3: #78706f;
+$color_4: #362f2d;
+$color_5: #e4e1dd;
+$color_6: #c5bfb7;
+$color_7: #d0cac4;
+
+$color_8: #b9afa1;
+
+$color_secondary: #6eb43f;
+
+@mixin border-radius($radius1) {
+  -webkit-border-radius:$radius1;
+     -moz-border-radius:$radius1;
+      -ms-border-radius:$radius1;
+	   -o-border-radius:$radius1;
+          border-radius:$radius1;
+}
+
+@mixin transform($transform1) {
+  -webkit-transform:$transform1;
+     -moz-transform:$transform1;
+      -ms-transform:$transform1;
+	   -o-transform:$transform1;
+          transform:$transform1;
+}
+
+@mixin transition($transition1) {
+  -webkit-transition:$transition1;
+     -moz-transition:$transition1;
+      -ms-transition:$transition1;
+	   -o-transition:$transition1;
+          transition:$transition1;
+}
+@mixin column-count($column-count) {
+  -webkit-column-count:$column-count;
+  	 -moz-column-count:$column-count;
+  	  -ms-column-count:$column-count;
+  	   -o-column-count:$column-count;
+  	      column-count:$column-count;
+}
+@mixin column-gap($column-gap) {
+  -webkit-column-gap:$column-gap;
+  	 -moz-column-gap:$column-gap;
+  	  -ms-column-gap:$column-gap;
+  	   -o-column-gap:$column-gap;
+  	      column-gap:$column-gap;
+}
+@mixin appearance($appearance){
+	 -webkit-appearance: none;
+		-moz-appearance: none;
+		 -ms-appearance: none;
+		  -o-appearance: none;
+			 appearance: none;
+}
+//Responsive Media Quearies
+
+$desktop_large: 1280px;
+$tab: 991px;
+$ipad: 767px;
+$mobile_land: 599px;
+$mobile_pot: 479px;

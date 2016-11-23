@@ -1,0 +1,25 @@
+.social {
+    background-color: $color_3;
+    text-align: center;
+    padding: 1rem;
+
+    &__link {
+        margin: 0 .5rem;
+    }
+
+    &__icon {
+        $dimensions: 30px;
+        width: $dimensions;
+        height: $dimensions;
+    }
+
+}
+
+
+.copyright {
+    padding: 1.5rem 0;
+
+    a {
+        color: $color_4;
+    }
+}

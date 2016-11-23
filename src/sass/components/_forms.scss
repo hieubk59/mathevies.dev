@@ -1,0 +1,87 @@
+.gform_wrapper {
+    max-width: 1024px;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.gfield {
+    padding: 1.5rem 0;
+}
+
+.gfield_label {
+    font-family: $font-primary-medium;
+}
+
+.gfield_description {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ginput_container {
+    input, textarea {
+        background-color: transparent;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        font-size: 1.6rem;
+        line-height: 3;
+        margin: 0;
+        padding: 0;
+
+        &:focus {
+            background-color: rgba($color_4, .1);
+            border: 0;
+            padding-left: 1rem;
+        }
+
+    }
+}
+
+
+.ginput_container_select {
+    select {
+        background-color: transparent;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+.gform_footer {
+    padding: 2rem 0 0 0;
+
+    .button {
+        background-color: $color_4;
+        color: $white;
+        margin: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
+}
+
+.gfield_checkbox, .gfield_radio {
+    li {
+        padding: 4px 0;
+    }
+}
+
+
+.ginput_container {
+    padding-top: 5px;
+}
+
+[type=checkbox]+label,
+[type=radio]+label {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: .7rem;
+    vertical-align: baseline;
+}

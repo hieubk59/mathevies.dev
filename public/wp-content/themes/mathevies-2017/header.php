@@ -8,40 +8,59 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-		<link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" rel="shortcut icon" />
+        <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
 
 		<?php wp_head(); ?>
 	</head>
 
 	<body <?php body_class(); ?>>
+
 		<?php
 			//Include SVG Sprite
 			include('assets/build/svg-sprite.svg');
 		?>
 
-		<div class="page-wrap">
+        <div class="wrapper">
+            <div class="wrapper__inner">
 
-			<header class="page-header">
+                <!-- START: Menu -->
+                <?php include("partials/menu.php"); ?>
+                <!-- END: Menu -->
 
-				<?php if (is_front_page()): ?>
+                <!-- START: Header content -->
+                <header>
 
-					<h1 class="page-header__logo">
-						<a href="<?php echo home_url(); ?>">
-							<?php bloginfo('name'); ?>
-						</a>
-					</h1>
+                    <div class="logo">
+                        <a href="<?php echo home_url(); ?>">
+                            <svg class="logo__svg">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-mathevies-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
 
-				<?php else: ?>
+                    <div class="header_rt clear">
 
-					<div class="page-header__logo">
-						<a href="<?php echo home_url(); ?>">
-							<?php bloginfo('name'); ?>
-						</a>
-					</div>
+                        <div class="header_rt_blk1">
+                            <h4><b>EN</b> / DE / FR / NL</h4>
+                        </div>
 
-				<?php endif; ?>
+                        <div class="header_rt_blk2 clear">
+                            <button class="c-hamburger c-hamburger--htx  menu_icon"><span></span</button>
+                        </div>
 
-			</header>
+                    </div>
+
+                </header>
+                <!-- END: Header content -->
+
+                <!-- START: Banner content -->
+                <?php include("partials/hero-banner.php"); ?>
+                <!-- END: Banner content -->
+
+                <!-- START: Date - info dtrip -->
+                <?php include("partials/notifications-banner.php"); ?>
+                <!-- END: Date - info dtrip -->
+
 
 			<nav class="site-nav">
 

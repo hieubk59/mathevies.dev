@@ -5,6 +5,10 @@
 // Breakpoints
 @import '../../bower_components/compass-breakpoint/stylesheets/breakpoint';
 
+// Remodal
+@import '../../bower_components/remodal/dist/remodal';
+
+
 // Iconfont
 // @import "icons";
 
@@ -22,7 +26,9 @@
 @import 'vendor/reset';
 
 // Vendors
-@import 'vendor/hamburger';
+//@import 'vendor/hamburger';
+@import 'vendor/slick';
+@import 'vendor/slick-theme';
 
 // Base
 @import 'base/fonts';
@@ -36,3 +42,15 @@
 @import 'partials/app';
 @import 'partials/header';
 @import 'partials/footer';
+
+// Components
+@import 'components/pre-styles';
+@import 'components/sections';
+@import 'components/slick-slider';
+@import 'components/video-modal';
+@import 'components/social';
+@import 'components/forms';
+@import 'components/faqs';
+
+//utilities
+@import 'utilities/visibility-utilities';

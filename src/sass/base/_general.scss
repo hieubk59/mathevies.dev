@@ -9,6 +9,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 *,
 *::before,
 *::after {
@@ -109,4 +110,9 @@ a {
   @media screen and (max-width: 375px) {
     padding: 0 10px;
   }
+}
+
+
+.clear {
+    @include clearfix;
 }

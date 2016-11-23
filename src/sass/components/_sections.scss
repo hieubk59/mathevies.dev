@@ -1,0 +1,172 @@
+@lost gutter 0px;
+
+.section {
+    @include clearfix;
+    position: relative;
+    padding: 0;
+    margin-bottom: 6px;
+
+    // Desktop
+    @include breakpoint($small) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__image-container {
+        margin-right: 6px;
+        width: 100%;
+
+        // Desktop
+        @include breakpoint($small) {
+            width: 65%;
+        }
+
+    }
+
+    &__figure {
+
+    }
+
+    &__image {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    &__icon {
+        $dimensions: 50px;
+        width: $dimensions;
+        height: $dimensions;
+        margin-top: 2rem;
+    }
+
+
+    &__content-container {
+        background-color: $color_8;
+        //background-color: lighten($color_4, 15%);
+        position: relative;
+        width: 100%;
+        display: block;
+        padding-bottom: 45%;
+        color: $white;
+        transition: all .2s ease;
+
+        // Desktop
+        @include breakpoint($small) {
+            width: 35%;
+            padding-bottom: 10%;
+        }
+
+        @include breakpoint($medium) {
+            padding-bottom: 0;
+        }
+
+        // Hover state
+        &:hover {
+            background-color: $color_7;
+            color: $color_3;
+
+            h2 {
+                &:after {
+                    content:'';
+                    width: 168px;
+                    height: 1px;
+                    background: $color_4;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -85px;
+                }
+            }
+
+        }
+
+    }
+
+    &__content-inner {
+        font-family: $font-primary-bold;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 1rem;
+
+        h2, h4 {
+            margin: 0;
+        }
+
+        h2 {
+            padding: 1rem 0;
+            position: relative;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            line-height: 1;
+
+            // Desktop
+            @include breakpoint($small) {
+                font-size: 2rem;
+            }
+
+            // Desktop
+            @include breakpoint($medium) {
+                font-size: 3rem;
+            }
+
+            &:after {
+            	background: $white;
+            	bottom: 0px;
+            	content:'';
+            	height: 1px;
+            	left: 50%;
+            	margin-left: -34px;
+            	position: absolute;
+            	width: 68px;
+                transition: all .3s ease;
+            }
+
+        }
+
+        h4 {
+            font-family: $font-primary;
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            line-height: 1.2;
+
+            // Desktop
+            @include breakpoint($small) {
+                font-size: 1.3rem;
+                line-height: 1.4;
+            }
+
+            // Desktop
+            @include breakpoint($medium) {
+                font-size: 1.8rem;
+                line-height: 1.2;
+            }
+
+        }
+
+    }
+
+    // Every second row
+    &:nth-child(2n) {
+
+        // Desktop
+        @include breakpoint($small) {
+            flex-direction: row-reverse;
+            .section__image-container {
+                margin-right: 0;
+            }
+
+            .section__content-container {
+                margin-right: 6px;
+            }
+        }
+
+    }
+
+
+}

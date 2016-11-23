@@ -198,7 +198,8 @@ var handleErrors = function() {
 };
 
 //Production ready
-gulp.task('build', ['uglifyJs', 'lint', 'sass', 'svgSprite']);
+//gulp.task('build', ['uglifyJs', 'lint', 'sass', 'svgSprite']);
+gulp.task('build', ['lint', 'sass', 'svgSprite']);
 
 // Default Task
 gulp.task('default', ['build', 'buildTask', 'browserServe']);

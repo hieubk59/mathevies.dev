@@ -5,8 +5,8 @@
 $font-name: 'gotham';
 $file-path: 'fonts/#{$font-name}/';
 @include web-font('#{$font-name}-book', '#{$file-path}', '#{$font-name}-book');
+@include web-font('#{$font-name}-thin', '#{$file-path}', '#{$font-name}-thin');
+@include web-font('#{$font-name}-light', '#{$file-path}', '#{$font-name}-light');
 @include web-font('#{$font-name}-medium', '#{$file-path}', '#{$font-name}-medium');
-
-.bob {
-    color: red;
-}
+@include web-font('#{$font-name}-bold', '#{$file-path}', '#{$font-name}-bold');
+@include web-font('#{$font-name}-black', '#{$file-path}', '#{$font-name}-black');

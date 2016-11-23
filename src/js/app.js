@@ -4,10 +4,15 @@
 /* jshint -W097 */
 
 "use strict";
-var $ = require('jquery');
+//var $ = require('jquery');
 
 //Require our modules
 //EXAMPLE
-require('./sample');
+//require('./sample');
+
+//Slick Slider
+require('./slider');
+require('./remodal');
+require('./menu');
 
 //TO GET THEME PATH use site_data.themePath

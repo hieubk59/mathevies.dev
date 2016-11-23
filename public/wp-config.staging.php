@@ -13,13 +13,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'mathevies.dev');
+define('DB_NAME', 'cl33-staging-60p');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'cl33-staging-60p');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'N^KUC7CbD');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

@@ -1,8 +1,8 @@
 {
-  "name": "wordpress-gulp-starter",
+  "name": "Mathevies",
   "version": "0.0.0",
   "homepage": "http://squie.com",
-  "description": "Wordpress gulp starter",
+  "description": "Domaine Des Mathevies",
   "main": "",
   "moduleType": [],
   "authors": [
@@ -26,5 +26,9 @@
     "ease": "^1.1.0",
     "d3-ease": "^0.7.0",
     "echojs": "^1.7.3"
+  },
+  "devDependencies": {
+    "slick-carousel": "^1.6.0",
+    "remodal": "^1.1.0"
   }
 }

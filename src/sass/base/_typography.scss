@@ -23,24 +23,24 @@ h4 {
 
 p,
 li {
-  @include set-font-size(1.5rem, 1.5rem, 1.5rem);
+  //@include set-font-size(1.5rem, 1.5rem, 1.5rem);
 }
 
-h1 {
-  @include set-font-size(3rem, 4rem, 6rem);
-}
-
-h2 {
-  @include set-font-size(2rem, 3rem, 4rem);
-}
-
-h3 {
-  @include set-font-size(2rem, 2.5rem, 3rem);
-}
-
-h4 {
-  @include set-font-size(2rem, 2rem, 2rem);
-}
+// h1 {
+//   @include set-font-size(3rem, 4rem, 6rem);
+// }
+//
+// h2 {
+//   @include set-font-size(2rem, 3rem, 4rem);
+// }
+//
+// h3 {
+//   @include set-font-size(2rem, 2.5rem, 3rem);
+// }
+//
+// h4 {
+//   @include set-font-size(2rem, 2rem, 2rem);
+// }
 
 blockquote {
   @include set-font-size(2rem, 2rem, 2rem);
