@@ -13,5 +13,5 @@
     </a>
 </section>
 
-<p class="copyright"><strong>Photography by:</strong> <a href="http://www.michaelmannphotography.com/">Michael Mann Photography</a> &amp; <a href="http://www.mattjessop.com/">Matt Jessop Photography</a>, 
+<p class="copyright"><strong>Photography by:</strong> <a href="http://www.michaelmannphotography.com/" target="_blank">Michael Mann Photography</a> &amp; <a href="http://www.mattjessop.com/" target="_blank">Matt Jessop Photography</a>, 
 <strong>Design &amp; development by:</strong> <a href="http://squie.com">Squie</a></p>

@@ -25,10 +25,9 @@
     "skrollr": "^0.6.30",
     "ease": "^1.1.0",
     "d3-ease": "^0.7.0",
-    "echojs": "^1.7.3"
-  },
-  "devDependencies": {
+    "echojs": "^1.7.3",
     "slick-carousel": "^1.6.0",
-    "remodal": "^1.1.0"
+    "remodal": "^1.1.0",
+    "scrollspy": "^0.1.3"
   }
 }

@@ -1,7 +1,17 @@
+@lost gutter 20px;
+
+$font-size: 1.5rem;
+
 .gform_wrapper {
     max-width: 1024px;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: $font-size;
+
+    a {
+        color: $color_4;
+        text-decoration: underline;
+    }
+
 }
 
 .gfield {
@@ -13,20 +23,21 @@
 }
 
 .gfield_description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 5px;
+    color: $color_3;
 }
 
 .ginput_container {
     input, textarea {
         background-color: transparent;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        font-size: 1.6rem;
+        border: 0;
+        font-size: $font-size;
         line-height: 3;
         margin: 0;
         padding: 0;
+        padding-left: 1rem;
+        background-color: rgba($color_3, .1);
 
         &:focus {
             background-color: rgba($color_4, .1);
@@ -37,18 +48,57 @@
     }
 }
 
+// Multiple email
+.ginput_complex {
+    @include clearfix;
 
-.ginput_container_select {
-    select {
-        background-color: transparent;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        font-size: 1.4rem;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+    span {
+        margin-bottom: 1.5rem;
+        display: block;
     }
+
+    @include breakpoint($medium) {
+        span {
+            lost-column: 1/2;
+            float: left;
+        }
+    }
+
+}
+
+
+.gform_wrapper textarea {
+    height: 150px!important;
+}
+
+
+select {
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    font-size: $font-size;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: $font-primary-medium;
+
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+    }
+
+}
+
+
+
+.clear-multi {
+    @include clearfix;
+
+    .ginput_container_date {
+        lost-column: 1/3;
+    }
+
 }
 
 
@@ -84,4 +134,41 @@
     margin-bottom: 0;
     margin-left: .7rem;
     vertical-align: baseline;
+}
+
+
+.gfield_required {
+    color: red;
+}
+
+
+// Date
+.ginput_container_date {
+    position: relative;
+}
+// Cal Icon
+.ui-datepicker-trigger {
+    position: absolute;
+    top: 40%;
+    transform: translateX(-50%);
+    right: 0;
+}
+
+// Date picker
+.ui-datepicker {
+    background-color: $color_1;
+    padding: 10px;
+
+    a {
+        color: $color_4;
+    }
+
+}
+
+
+// dates
+.ui-datepicker-calendar {
+    thead, tbody {
+        background-color: transparent!important;
+    }
 }

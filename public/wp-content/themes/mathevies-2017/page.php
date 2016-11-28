@@ -15,13 +15,6 @@ $tertiaryHeading = get_field('tertiary_heading');
         <div class="pitches">
           	  	<div class="pitches_in">
 
-                    <!-- Tertiary heading -->
-                    <?php if( $tertiaryHeading ) : ?>
-                        <h2>
-                            <?php echo $tertiaryHeading; ?>
-                        </h2>
-                    <?php endif; ?>
-
                     <!-- Subtitle -->
                     <?php if( $introductoryParagraph ) : ?>
                         <h3>

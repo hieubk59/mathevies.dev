@@ -23,7 +23,7 @@
     if (WP_ENV == 'production') {
       $scriptFilename = 'app.min.js';
     } else {
-      $scriptFilename = 'app.js';
+      $scriptFilename = 'app.min.js';
     }
 
     wp_register_script('theme_js', get_template_directory_uri() . '/assets/build/' . $scriptFilename, array(), '1.1', true);

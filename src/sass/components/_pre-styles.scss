@@ -28,9 +28,7 @@
 }
 
 
-header {
-	//padding:16px 0 11px;
-    //padding: 1rem 0rem;
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -55,9 +53,15 @@ header {
 
     }
 
+    &__wrapper {
+        @include clearfix;
+        margin-bottom: 6px;
+        position: relative;
+    }
+
 
     @include breakpoint($medium) {
-        padding: 1rem 3rem;
+        padding: 1rem 3rem 0;
         //margin: 0 3rem;
     }
 
@@ -81,7 +85,8 @@ header {
         top: 20px;
 
         @include breakpoint($medium) {
-            top: 28px;
+            right: -26px;
+            top: 20px;
         }
 
 
@@ -127,7 +132,7 @@ header {
     margin-bottom: 6px;
 
     @include breakpoint($medium) {
-        margin-top: 72px;
+        margin-top: 69px;
     }
 
 	.banner_img {
@@ -371,7 +376,7 @@ body.home {
                 content:'';
                 width: 63px;
                 height: 2px;
-                background: $color_5;
+                background: lighten($color_4, 40%);
                 position: absolute;
                 bottom: 0;
                 left: 50%;
@@ -651,6 +656,7 @@ body.home {
 .footer-span {
     //display: block;
     display: inline-block;
+    padding: .7rem 0;
 
     @media (max-width:$tab) {
         display: inline-block;
@@ -661,6 +667,10 @@ body.home {
         @include breakpoint($small) {
             display: inline !important;
         }
+    }
+
+    .hide-below--small {
+        padding: 0 1rem;
     }
 
 }
@@ -1001,4 +1011,36 @@ img {
     margin: 2rem auto;
     border-top: solid 1px $color_3;
     max-width: 60%;
+}
+
+
+// Tablepress
+
+.tablepress {
+    font-size: 1.5rem;
+}
+
+.tablepress thead th {
+    color: $white;
+    background: lighten($color_4, 10%)!important;
+}
+
+
+// Breadcrumns
+
+.breadcrumbs {
+    margin-bottom: 6px;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-family: $font-primary;
+    text-transform: uppercase;
+
+    a {
+        color: $color_4
+    }
+
+}
+
+.breadcrumb_last {
+    font-family: $font-primary-medium;
 }

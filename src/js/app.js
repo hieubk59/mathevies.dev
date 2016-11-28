@@ -11,8 +11,8 @@
 //require('./sample');
 
 //Slick Slider
+require('./scrollspy');
 require('./slider');
-require('./remodal');
 require('./menu');
 
 //TO GET THEME PATH use site_data.themePath

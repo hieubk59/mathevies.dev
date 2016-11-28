@@ -19,7 +19,7 @@
                 </p>
 
                 <div class="small-copy">
-                    <p class="copyright">&copy;<?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. Terms &amp; Conditions.</p>
+                    <p class="copyright">&copy;<?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <a href="<?php echo site_url(); ?>/terms-conditions">Terms &amp; Conditions.</a></p>
                 </div>
 
             </footer>

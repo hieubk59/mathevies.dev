@@ -8,15 +8,15 @@
             'post__in' => array( 8, 10, 12, 14, 16, 113, 138, 161 )
         );
 
-    // If is Activities
-} elseif( is_page( array( 138, 142, 144, 146, 148, 150, 152 ) ) ) {
+    // If is Facilities
+} elseif( is_page( array( 138, 142, 144, 146, 148, 150, 152, 140 ) ) ) {
         $args = array(
      	    'post_type' => 'page',
-            'post__in' => array( 142, 144, 146, 148, 150, 152 )
+            'post__in' => array( 142, 144, 146, 148, 150, 152, 140 )
         );
 
-    // If is Facilities
-    } elseif( is_page( array( 161, 163, 165, 167, 169, 171, 173 ) ) ) {
+    // If is Activities
+} elseif( is_page( array( 161, 163, 165, 167, 169, 171, 173 ) ) ) {
         $args = array(
      	    'post_type' => 'page',
             'post__in' => array( 163, 165, 167, 169, 171, 173 )
@@ -44,17 +44,23 @@
         );
     }
     // Query posts
-    query_posts($args);
+
+    $the_query = new WP_Query ($args);
+    //query_posts($args);
 
     // Wordpress loop
-    if ( have_posts() ) while ( have_posts() ) : the_post();
+    if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
 
     // do not duplicate post
     if ( $post->ID == $do_not_duplicate ) continue;
 
+
+    // Get post slug
+    $slugName =  $post->post_name;
+
 ?>
 
-<div class="section" id="post-<?php the_ID(); ?>">
+<div class="section" id="<?php echo $slugName; ?>">
 
         <div class="section__image-container">
             <figure class="section__figure">
@@ -106,10 +112,11 @@ $args = array(
 );
 
 // Query posts
-query_posts($args);
+//query_posts($args);
+$the_query = new WP_Query ($args);
 
 // Wordpress loop
-if ( have_posts() ) while ( have_posts() ) : the_post();
+if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
 
 // do not duplicate post
 // if ( $post->ID == $do_not_duplicate ) continue;
@@ -120,7 +127,13 @@ if ( have_posts() ) while ( have_posts() ) : the_post();
 
     <div class="banner_img">
         <figure>
-            <img src="<?php the_post_thumbnail_url( $post_thumbnail_id ); ?>" width="1257" height="501" alt="<?php bloginfo('name'); ?>">
+            <?php if( get_the_post_thumbnail_url( $post_thumbnail_id ) ) : ?>
+                <!-- Image -->
+                <img src="<?php the_post_thumbnail_url( $post_thumbnail_id ); ?>" width="843" height="400"  class="section__image"alt="<?php bloginfo('name'); ?>">
+            <?php else : ?>
+                <!-- Placeholder Image -->
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/11/placeholder.jpg" width="843" height="400"  class="section__image"alt="<?php bloginfo('name'); ?>">
+            <?php endif; ?>
         </figure>
     </div>
 

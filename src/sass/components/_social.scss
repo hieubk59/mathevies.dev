@@ -5,6 +5,7 @@
 
     &__link {
         margin: 0 .5rem;
+        padding: .5rem;
     }
 
     &__icon {
@@ -18,8 +19,19 @@
 
 .copyright {
     padding: 1.5rem 0;
+    line-height: 3;
 
     a {
         color: $color_4;
+        padding: .8rem 0;
+    }
+
+}
+
+.small-copy {
+    .copyright {
+        a {
+            color: $white!important;
+        }
     }
 }
