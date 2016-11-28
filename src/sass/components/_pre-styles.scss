@@ -392,7 +392,7 @@ body.home {
             font-size: 1.7rem;
             line-height: 1.6;
             margin-bottom: 20px;
-            padding-top: 20px;
+            //padding-top: 20px;
 
             a {
                 color: currentcolor;
@@ -420,6 +420,15 @@ body.home {
 				}
 			}
 		}
+
+        h4 {
+            font-family: $font-primary-bold;
+            //text-transform: uppercase;
+            font-size: 1.8rem;
+            line-height: 1.3;
+            margin: 0;
+            color: $color_4;
+        }
 	}
 }
 .slider {

@@ -1,7 +1,7 @@
 <div class="dates clear">
 
     <section class="dates__lf">
-        <h4 class="dates__open-from"><span class="dates__title">Open from:</span> <?php the_field('open', 'options'); ?><span class="dates__title"> - </span><?php the_field('closed', 'options'); ?></h4>
+        <div class="dates__open-from"><span class="dates__title">Open from:</span> <?php the_field('open', 'options'); ?><span class="dates__title"> - </span><?php the_field('closed', 'options'); ?></div>
     </section>
 
     <div class="dates__rt">
