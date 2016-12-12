@@ -12,7 +12,11 @@
 
 
 .slick-dots {
-    bottom: 20px;
+    bottom: 30px;
+
+    @include breakpoint($medium) {
+        bottom: 10px;
+    }
 }
 
 .slick-dotted.slick-slider {
@@ -171,5 +175,33 @@
         }
     }
 
+
+}
+
+
+
+.slick-slide {
+    position: relative;
+}
+
+
+.slick-slide img {
+    position: relative;
+    z-index: 0;
+}
+
+
+.slick-slide p {
+    z-index: 1;
+    background-color: white;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    @include breakpoint($medium) {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
 
 }

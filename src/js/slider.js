@@ -16,7 +16,7 @@ var slick = require('slickJS');
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     nextArrow: '<div class="next chevron right"><span class="sr-only">Next</span></div>',
     prevArrow: '<div class="prev chevron left"><span class="sr-only">Previous</span></div>',
   });

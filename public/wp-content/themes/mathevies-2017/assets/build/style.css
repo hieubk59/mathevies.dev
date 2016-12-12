@@ -947,18 +947,25 @@ a {
   padding: 0;
   float: left;
   display: inline-block;
-}
-
-.header .header_rt .header_rt_blk1 h4 {
-  font-family: "gotham-book", Helvetica, Arial, sans-serif;
-  color: #78706f;
-  font-size: 1.1rem;
+  text-transform: uppercase;
   padding-top: 1px;
 }
 
-.header .header_rt .header_rt_blk1 h4 b {
-  font-family: "gotham-black", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+.header .header_rt .header_rt_blk1 a {
+  font-family: "gotham-book", Helvetica, Arial, sans-serif;
+  color: #78706f;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.header .header_rt .icl_lang_sel_current {
+  font-family: "gotham-bold", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.header .header_rt a .icl_lang_sel_current {
+  font-family: "gotham-book", Helvetica, Arial, sans-serif;
 }
 
 .header .header_rt .header_rt_blk2 {
@@ -1904,6 +1911,7 @@ img {
 
 .tablepress {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 .tablepress thead th {
@@ -1925,6 +1933,23 @@ img {
 
 .breadcrumb_last {
   font-family: "gotham-medium", Helvetica, Arial, sans-serif;
+}
+
+ol {
+  list-style-type: upper-alpha;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+ol li {
+  line-height: 2;
+}
+
+.page-id-27 .pitches_in p,
+.page-id-27 .pitches_in ol,
+.page-id-27 .pitches_in h3 {
+  text-align: left !important;
 }
 
 @lost gutter 0px;
@@ -2099,7 +2124,13 @@ img {
 }
 
 .slick-dots {
-  bottom: 20px;
+  bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .slick-dots {
+    bottom: 10px;
+  }
 }
 
 .slick-dotted.slick-slider {
@@ -2210,6 +2241,31 @@ img {
     width: 15px !important;
     height: 15px !important;
     line-height: 16px;
+  }
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slick-slide img {
+  position: relative;
+  z-index: 0;
+}
+
+.slick-slide p {
+  z-index: 1;
+  background-color: white;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .slick-slide p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
   }
 }
 

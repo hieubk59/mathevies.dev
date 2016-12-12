@@ -24,7 +24,7 @@ $tertiaryHeading = get_field('tertiary_heading');
 
                 <?php the_content(); ?>
 
-                <?php if ( is_page(191) ): ?>
+                <?php if ( is_page('faqs') ): ?>
                     <section class="faqs">
                     	<?php if(get_field('faqs')): ?>
                     	<?php while(has_sub_field('faqs')): ?>

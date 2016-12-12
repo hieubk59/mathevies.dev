@@ -94,24 +94,32 @@
 			padding: 0;
 			float: left;
 			display: inline-block;
-
+            text-transform: uppercase;
+            padding-top: 1px;
 			// @media (max-width:$mobile_pot){
 			// 	padding: 1px 0 0 0;
 			// }
 
-			h4 {
+			a {
 				font-family: $font-primary;
 				color:$color_3;
-                font-size: 1.1rem;
-                padding-top: 1px;
-
-
-				b {
-					font-family: $font-primary-black;
-					font-weight:normal;
-				}
+                font-size: 1.2rem;
+                text-decoration: none;
 			}
 		}
+
+
+        .icl_lang_sel_current {
+            font-family: $font-primary-bold;
+            font-size: 1.2rem;
+            margin-left: 10px;
+        }
+
+        a .icl_lang_sel_current {
+            font-family: $font-primary;
+        }
+
+
 		.header_rt_blk2{
 			float:right;
 			display:inline-block;
@@ -1027,6 +1035,7 @@ img {
 
 .tablepress {
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .tablepress thead th {
@@ -1052,4 +1061,25 @@ img {
 
 .breadcrumb_last {
     font-family: $font-primary-medium;
+}
+
+
+
+ol {
+    list-style-type: upper-alpha;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+
+    li {
+        line-height: 2;
+    }
+
+}
+
+
+.page-id-27 .pitches_in p,
+.page-id-27 .pitches_in ol,
+.page-id-27 .pitches_in h3{
+    text-align: left!important;
 }

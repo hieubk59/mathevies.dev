@@ -36,6 +36,13 @@
             'post__in' => array(107, 109)
         );
 
+    // If is Welcome
+} elseif( is_page( array(186, 188, 191 ) ) ) {
+        $args = array(
+     	    'post_type' => 'page',
+            'post__in' => array(188, 191)
+        );
+
     // All pages
     } else {
         $args = array(

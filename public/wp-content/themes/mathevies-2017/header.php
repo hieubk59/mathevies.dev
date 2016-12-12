@@ -44,7 +44,24 @@
                         <div class="header_rt clear">
 
                             <div class="header_rt_blk1">
-                                <h4><b>EN</b> / DE / FR / NL</h4>
+								
+								<?php function language_selector_flags(){
+								$languages = icl_get_languages('skip_missing=0&orderby=code');
+								if(!empty($languages)){
+									foreach($languages as $l){
+										if(!$l['active']) echo '<a href="'.$l['url'].'">';
+										//echo '<img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" /> ';
+										echo icl_disp_language($l['native_name'], $l['translated_name']);
+										if(!$l['active']) echo '</a>';
+									}
+								}
+							}
+
+							language_selector_flags();
+
+							?>
+
+
                             </div>
 
                             <div class="header_rt_blk2 clear">
