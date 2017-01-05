@@ -14,22 +14,13 @@
 ?>
 
 
-
-<!-- <div class="remodal" data-remodal-id="modal">
-  <button data-remodal-action="close" class="remodal-close"></button>
-
-      <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/DJDQaroUHK4" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-</div>
-
-<a href="#modal">Call the modal with data-remodal-id="modal"</a> -->
-
-
 <?php
 // If is Gallery
-if ( is_page(116) ) : ?>
+$Gallery = 116;
+$Galerij = 690;
+$Galerie = 937;
+
+if ( is_page( array($Gallery, $Galerij, $Galerie) ) ) : ?>
     <div class="banner">
         <!-- START: Slick slider -->
         <?php include("slider.php"); ?>
@@ -41,10 +32,15 @@ if ( is_page(116) ) : ?>
 
 <?php
 // If is Video
-if ( is_page(8) ) : ?>
+
+$video = 8;
+$video_nl = 683;
+$Regardez_notre_vidéo = 957;
+
+if ( is_page( array($video, $video_nl, $Regardez_notre_vidéo) ) ) : ?>
     <div class="banner">
         <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DJDQaroUHK4" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NdWxSLqF8p0" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 <?php endif; ?>
@@ -52,7 +48,12 @@ if ( is_page(8) ) : ?>
 
 <?php
 // If is Map
-if ( is_page(113) ) : ?>
+
+$Explore = 113;
+$onderzoek = 687;
+$Explorer = 934;
+
+if ( is_page( array($Explore, $onderzoek, $Explorer) ) ) : ?>
 <div class="banner">
 
     <div class="banner_img">
@@ -67,7 +68,7 @@ if ( is_page(113) ) : ?>
 
 <?php
 // If is not Video, Gallery, Explore
-if ( !is_page( array(8, 116, 113) ) ) : ?>
+if ( !is_page( array($video, $video_nl, $Regardez_notre_vidéo, $Gallery, $Galerij, $Galerie, $Explore, $onderzoek, $Explorer) ) ) : ?>
 
     <?php if( get_the_post_thumbnail_url( $post_thumbnail_id ) ) : ?>
         <!-- Image -->

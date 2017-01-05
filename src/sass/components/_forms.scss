@@ -16,6 +16,7 @@ $font-size: 1.5rem;
 
 .gfield {
     padding: 1.5rem 0;
+    clear: both;
 }
 
 .gfield_label {
@@ -171,4 +172,26 @@ select {
     thead, tbody {
         background-color: transparent!important;
     }
+}
+
+
+.gform_fields {
+    @include clearfix;
+}
+
+.dob, .passport {
+
+    @include breakpoint($small) {
+        lost-column: 1/2;
+    }
+
+}
+
+.dob {
+    float: left;
+}
+
+.gsection_title {
+    border-bottom: solid 1px $color_2;
+    clear: both;
 }

@@ -1902,7 +1902,7 @@ img {
 }
 
 .small-copy {
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding-top: 2rem;
   margin: 2rem auto;
   border-top: solid 1px #78706f;
@@ -1936,7 +1936,7 @@ img {
 }
 
 ol {
-  list-style-type: upper-alpha;
+  list-style-type: decimal;
   font-size: 16px;
   text-align: left;
   margin-bottom: 20px;
@@ -2604,6 +2604,7 @@ ol li {
 
 .gfield {
   padding: 1.5rem 0;
+  clear: both;
 }
 
 .gfield_label {
@@ -2738,6 +2739,27 @@ select:-moz-focusring {
 
 .ui-datepicker-calendar thead, .ui-datepicker-calendar tbody {
   background-color: transparent !important;
+}
+
+.gform_fields::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+@media (min-width: 540px) {
+  .dob, .passport {
+    lost-column: 1/2;
+  }
+}
+
+.dob {
+  float: left;
+}
+
+.gsection_title {
+  border-bottom: solid 1px #a4a29d;
+  clear: both;
 }
 
 .faqs {
