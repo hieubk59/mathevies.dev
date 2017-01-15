@@ -25,6 +25,7 @@ define('DB_PASSWORD', 'root');
 define('DB_HOST', 'localhost');
 
 
+
 /**
  * For developers: WordPress debugging mode.
  *

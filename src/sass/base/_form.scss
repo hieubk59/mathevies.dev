@@ -144,3 +144,9 @@ select::-ms-expand {
 select[multiple] {
   height: auto;
 }
+
+
+
+.validation_error, .validation_message {
+    color: red!important;
+}

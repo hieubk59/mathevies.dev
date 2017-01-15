@@ -631,6 +631,10 @@ select[multiple] {
   height: auto;
 }
 
+.validation_error, .validation_message {
+  color: red !important;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1038,7 +1042,7 @@ a {
 
 @media (max-width: 479px) {
   .banner .banner_in .banner_cnt .banner_sec .banner_blk {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -1952,6 +1956,11 @@ ol li {
   text-align: left !important;
 }
 
+.gform_confirmation_message {
+  font-size: 24px;
+  line-height: 24px;
+}
+
 @lost gutter 0px;
 .section {
   position: relative;
@@ -2578,7 +2587,7 @@ ol li {
 
 .copyright {
   padding: 1.5rem 0;
-  line-height: 3;
+  line-height: 1.7;
 }
 
 .copyright a {

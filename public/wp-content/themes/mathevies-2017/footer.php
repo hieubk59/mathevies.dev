@@ -19,7 +19,27 @@
                 </p>
 
                 <div class="small-copy">
-                    <p class="copyright">&copy;<?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <a href="<?php echo site_url(); ?>/terms-and-conditions">Terms &amp; Conditions.</a></p>
+                    <p class="copyright">&copy;<?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
+
+                    <?php
+                        // If English
+                        if(ICL_LANGUAGE_CODE=='en') : ?>
+                        <a href="<?php echo site_url(); ?>/terms-and-conditions">Terms &amp; Conditions.</a>
+
+                        <?php
+                        // If Dutch
+                        elseif(ICL_LANGUAGE_CODE=='nl') : ?>
+                        <a href="<?php echo site_url(); ?>/algemene-boekingsvoorwaarden/?lang=nl">Algemene boekingsvoorwaarden.</a>
+
+                        <?php
+                        // If French
+                        elseif(ICL_LANGUAGE_CODE=='fr') : ?>
+                        <a href="<?php echo site_url(); ?>/conditions-de-reservation/?lang=fr">Conditions de reservation.</a>
+
+                    <?php endif; ?>
+
+
+                    </p>
                 </div>
 
             </footer>

@@ -179,7 +179,7 @@
 						width: 60%;
 					}
 					@media (max-width:$mobile_pot){
-						width: 80%;
+						width: 100%;
 					}
 					figure {
 						display:inline-block;
@@ -1082,4 +1082,10 @@ ol {
 .page-id-27 .pitches_in ol,
 .page-id-27 .pitches_in h3{
     text-align: left!important;
+}
+
+
+.gform_confirmation_message {
+    font-size:24px;
+    line-height:24px;
 }

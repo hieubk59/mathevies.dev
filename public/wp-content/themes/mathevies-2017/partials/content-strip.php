@@ -60,7 +60,7 @@ $Boules_nl = 631;
 $De_Schuur = 628;
 $Activiteiten = 641;
 $Kanovaren_Dordogne = 643;
-$Pony_rides = 651;
+$Pony_rides_nl = 651;
 $Wandelen_en_fietsen = 656;
 $Top_Attracties_in_de_Dordogne = 647;
 $Kinderspul = 659;
@@ -72,9 +72,9 @@ $Vinden = 669;
 // French
 $Home_fr = 819;
 $Le_Camping = 815;
-$Les_Gîtes = 821;
-$Gîte_Les_Mathevies = 853;
-$Gîte_Le_Point_de_Vue = 839;
+$Les_Gîtes_fr = 821;
+$Gîte_Les_Mathevies_fr = 853;
+$Gîte_Le_Point_de_Vue_fr = 839;
 $Les_Chalets_fr = 860;
 $Les_Chalets_Eden_fr = 866;
 $Chalets_Plein_Air_fr = 869;
@@ -90,18 +90,26 @@ $Aire_de_jeux = 883;
 $Tennis = 886;
 $Jeu_de_boules = 891;
 $La_Grange = 889;
-$Les_activités = 903;
-$Canoé = 905;
-$Promenade_en_poney = 917;
-$Randonnées = 923;
-$Top_visite_en_Dordogne = 909;
-$Le_coin_des_enfants = 926;
-$Feu_de_camp = 931;
+$Les_activités_fr = 903;
+$Canoé_fr = 905;
+$Promenade_en_poney_fr = 917;
+$Randonnées_fr = 923;
+$Top_visite_en_Dordogne_fr = 909;
+$Le_coin_des_enfants_fr = 926;
+$Feu_de_camp_fr = 931;
 $Beinevenue = 945;
 $Nous_trouvez = 942;
 $FAQs_fr = 836;
 $Tarifs = 948;
 $Regardez_notre_vidéo = 957;
+
+// $Les_activités_fr,
+// $Canoé_fr,
+// $Promenade_en_poney_fr,
+// $Randonnées_fr,
+// $Top_visite_en_Dordogne_fr,
+// $Le_coin_des_enfants_fr,
+// $Feu_de_camp_fr
 
 // if is front page
 $font_page = array(
@@ -217,20 +225,20 @@ $Activities = array(
     // Dutch
     $Activiteiten,
     $Kanovaren_Dordogne,
-    $Pony_rides,
+    $Pony_rides_nl,
     $Wandelen_en_fietsen,
     $Top_Attracties_in_de_Dordogne,
     $Kinderspul,
     $Kampvuur,
 
-    // Frech
-    $Les_activités,
-    $Canoé,
-    $Promenade_en_poney,
-    $Randonnées,
-    $Top_visite_en_Dordogne,
-    $Le_coin_des_enfants,
-    $Feu_de_camp
+    // French
+    $Les_activités_fr,
+    $Canoé_fr,
+    $Promenade_en_poney_fr,
+    $Randonnées_fr,
+    $Top_visite_en_Dordogne_fr,
+    $Le_coin_des_enfants_fr,
+    $Feu_de_camp_fr
 );
 
 $Activities_posted_in = array(
@@ -242,13 +250,20 @@ $Activities_posted_in = array(
     $Campfire,
 
     // Dutch
-    $Activiteiten,
     $Kanovaren_Dordogne,
-    $Pony_rides,
+    $Pony_rides_nl,
     $Wandelen_en_fietsen,
     $Top_Attracties_in_de_Dordogne,
     $Kinderspul,
-    $Kampvuur
+    $Kampvuur,
+
+    // French
+    $Canoé_fr,
+    $Promenade_en_poney_fr,
+    $Randonnées_fr,
+    $Top_visite_en_Dordogne_fr,
+    $Le_coin_des_enfants_fr,
+    $Feu_de_camp_fr
 );
 
 // Gites
@@ -263,9 +278,9 @@ $Gites = array(
     $Gîte_Le_Point_de_Vue_nl,
 
     // Frech
-    $Les_Gîtes,
-    $Gîte_Les_Mathevies,
-    $Gîte_Le_Point_de_Vue
+    $Les_Gîtes_fr,
+    $Gîte_Les_Mathevies_fr,
+    $Gîte_Le_Point_de_Vue_fr
 );
 
 $Gites_posted_in = array(
